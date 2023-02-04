@@ -1,6 +1,6 @@
 Form Registration for @mybae.id
 
-My Nostr pubkey : 
+My Nostr public key : 
 Username : 
 Twitter username : 
 
