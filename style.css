@@ -83,7 +83,6 @@ nav a:hover {
 .container {
   text-align: center;
   text-justify: inter-word;
-  width: 50%;
   margin: 0 auto;
   border: 2px double #6272a4;
   padding: 10px;
@@ -107,4 +106,12 @@ footer {
   padding-top: 5px; /* add some padding for visual separation */
 }
 
-
+@media only screen and (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    width: 50%;
+  }
+}
