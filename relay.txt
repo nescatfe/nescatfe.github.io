@@ -1,4 +1,17 @@
  wss://nostr-pub.wellorder.net
  wss://relay.nostr.info
+ wss://relay.snort.social
  wss://relay.plebstr.com
  wss://brb.io
+ wss://nostr.chaker.net
+ wss://nostr.13x.sh
+ wss://relay.damus.io
+ wss://relay.current.fyi
+ wss://nostr.drss.io
+ wss://no.str.cr
+ wss://nos.lol
+ wss://relay.bleskop.com
+ wss://nostr.sg
+ wss://eden.nostr.land
+ wss://nostr-relay.untethr.me
+ wss://node01.nostress.cc
