@@ -112,7 +112,4 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .container {
-    width: 30%;
-  }
 }
