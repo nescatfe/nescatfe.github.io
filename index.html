@@ -1,102 +1,60 @@
 <!DOCTYPE html>
 <html>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<head>
-		<title>MYBAE.ID</title>
-		<style>
-			@font-face {
-				font-family: 'Roboto Mono';
-				src: url('./fonts/static/RobotoMono-Regular.ttf') format('truetype');
-				font-weight: normal;
-				font-style: normal;
-			}
-			a {
-				text-decoration: none; /* Remove the underline */
-			}
-			p {
-				font-family: 'Roboto Mono', monospace;
-				font-size: 15px;
-			}
-			body {
-				background-color: #f2eecb;
-				color: black;
-			}
-			.red-text {
-				color: #ff5555;
-			}
-			.green-text {
-				color: #1DA1F2;
-			}
-			.pink-text {
-				font-family: 'Roboto Mono';
-				src: url('./fonts/static/RobotoMono-Bold.ttf') format('truetype');
-				font-size: 21px;
-				color: #bd93f9;
-			}
-			.footer-text {
-				font-family: 'Roboto Mono';
-				src: url('./fonts/static/RobotoMono-Regular.ttf') format('truetype');
-				font-size: 10px;
-				color: #ff79c6;
-			}
-		</style>
-	</head>
-	<body>
-<pre>
-
-	███╗   ███╗██╗   ██╗██████╗  █████╗ ███████╗   ██╗██████╗ 
-	████╗ ████║╚██╗ ██╔╝██╔══██╗██╔══██╗██╔════╝   ██║██╔══██╗
-	██╔████╔██║ ╚████╔╝ ██████╔╝███████║█████╗     ██║██║  ██║
-	██║╚██╔╝██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══╝     ██║██║  ██║
-	██║ ╚═╝ ██║   ██║   ██████╔╝██║  ██║███████╗██╗██║██████╔╝
-	╚═╝     ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝╚═╝╚═════╝ 
-	@mybae.id Nostr username providers! 🦄
-<p>Add your nostr public key using mybae.id so your followers can
-find you easily at <span class="red-text">yourusername</span>@mybae.id
-
-
-📛 <span class="pink-text">What is NIP-05 for Nostr?</span>
-  ► It's a human readable identifier for your public key.
-    you can use <span class="red-text">yourusername@mybae.id</span> instead <span class="red-text">npub....ad9asja</span> 😰
-  ► It makes identifying your account easier.
-  ► A NIP-05 ID also provides you with a shiny verified <span class="green-text">checkmark!</span>😉
-
-✅ <span class="pink-text">Why get an identifier on mybae.id</span>
-  ► idk, but if you love <span class="red-text">yourusername</span>@mybae.id for your <span class="green-text">checkmark</span> on Nostr,
-  why not?! it's fun, easier and cute tho?!
-
-⚡️ <span class="pink-text">How much does it cost?</span>
-  ► 🔥 Currently, it's free for 100 first person who had 500+ followers on twitter,
-	for the feedback you must be promote this Nostr indentifier on twitter.
-  ► You can pay too btw lol
-  ► Since i do it manually, so be patient
-  ► After 100 user registered, you need to pay once for a year!! 💰
-	so grab it fast!! ⚡️
-	・20k idr for 3 character names / <span class="red-text">***</span>@mybae.id
-	・15k idr for 4 character names / <span class="red-text">****</span>@mybae.id
-	・10k idr otherwise
-	
-	
-📖 <span class="pink-text">How to get a NIP-05 identifier for a checkmark?</span>
-  ► Make sure you have <span class="red-text">Nostr public key (npub...)</span> and <span class="red-text">username@</span> you want.
-	for form template <a href="/registration.txt" target="_blank">clickme</a>
-  ► Send me the form via e-mail at <span class="red-text">mybae.service@gmail.com</span>
-  ► While you waiting, open your profile settings and set your NIP-05 address
-	to <span class="red-text"><i>yourusername</i>@mybae.id</span>
-  ► I will verify your eligibility and get back to you within 2-3 hours.
-  ► I'll confirm to you through e-mail after.
-	
-		☔️☔️Be fast before someone steal your lovely💓 <span class="green-text">checkmark!</span>☔️☔️
-
-
-
-
-<span class="footer-text">
-made with ❤️ ubur.my.id
-my nostr: queen@mybae.id / npub13dq9ytvsxzs3ywhfqjet8350dtey59gyrujq6km3n8d65te2sgrsc8ux9d
-Please read our term of service here <a href="/tos.txt" target="_blank">{ToS}</a>
-</span>
-			</p>
-		</pre>
-	</body>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Simple Website</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Welcome to MYBAE.ID!</h1>
+  <h1 style="text-align: center;">Get a NIP-05 nostr Identifier</h1>
+  <div class="container">
+    <div class="header">
+      <nav>
+        <ul>
+          <li><a href="http://myhae.id">Home</a></li>
+          <li><a href="/tos.txt" target="_blank">ToS</a></li>
+          <li><a href="/help.txt" target="_blank">Help</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h2 style="text-align: left;">📛 What is <a href="https://github.com/nostr-protocol/nips/blob/master/05.md" target="_blank">NIP-05</a> for Nostr?</h2>
+      <p style="text-align: left;">
+        ► It's a human readable identifier for your public key, you can use <span class="red-text">yourusername@mybae.id</span> instead <span class="red-text">npub....ad9asja</span> 😰<br>
+        ► It makes identifying your account easier.<br>
+        ► A NIP-05 ID also provides you with a shiny verified <span class="green-text">checkmark!</span>😉<br>
+      </p>
+    <h2 style="text-align: left;">✅ Why get an identifier on mybae.id</h2>
+    <p style="text-align: left;">
+      ► idk, but if you love <span class="red-text">yourusername</span>@mybae.id for your <span class="green-text">checkmark</span> on Nostr,
+      why not?! it's fun, easier and cute tho?!
+    </p>
+    <h2 style="text-align: left;">⚡️ How much does it cost?</h2>
+    <p style="text-align: left;">
+      ► 🔥 Currently, it's free for 100 first person who had 500+ followers on twitter,
+      for the feedback you must be promote this Nostr indentifier on twitter.<br>
+      ► You can pay too btw lol<br>
+      ► Since i do it manually, so be patient<br>
+      ► After 100 user registered, you need to pay once for a year!! 💰
+      so grab it fast!! ⚡️<br>
+      ・20k idr for 3 character names / <span class="red-text">***</span>@mybae.id<br>
+      ・15k idr for 4 character names / <span class="red-text">****</span>@mybae.id<br>
+      ・10k idr otherwise
+    </p>
+    <h2 style="text-align: left;">📖 How to get a NIP-05 identifier for a checkmark?</h2>
+    <p style="text-align: left;">
+      ► Make sure you have <span class="red-text">Nostr public key (npub...)</span> and <span class="red-text">username@</span> you want. for form template <a href="/registration.txt" target="_blank">{clickme}</a><br>
+      ► Send me the form via e-mail at <span class="red-text">mybae.service@gmail.com</span><br>
+      ► While you waiting, open your profile settings and set your NIP-05 address
+      to <span class="red-text"><i>yourusername</i>@mybae.id</span><br>
+      ► I will verify your eligibility<br>
+      ► I'll confirm to you through e-mail after for the details and payment<br>
+      ► The procces take between 1 hours after payment
+    </p><br><br>
+    <p style="text-align: center;">☔️☔️Be fast before someone steal your lovely💓 <span class="green-text">checkmark!</span>☔️☔️</p><br><br>    
+    <footer>
+      made with ❤️ <a href="https://ubur.my.id" target="_blank">ubur.my.id</a> | nostr: queen@mybae.id
+    </footer>
+    
+    </div>
+  </body>
 </html>

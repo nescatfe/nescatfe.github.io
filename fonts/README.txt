@@ -1,32 +1,27 @@
-Roboto Mono Variable Font
-=========================
+ Inter Variable Font
+===================
 
-This download contains Roboto Mono as both variable fonts and static fonts.
+This download contains Inter as both a variable font and static fonts.
 
-Roboto Mono is a variable font with this axis:
+Inter is a variable font with these axes:
+  slnt
   wght
 
-This means all the styles are contained in these files:
-  RobotoMono-VariableFont_wght.ttf
-  RobotoMono-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Inter-VariableFont_slnt,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Roboto Mono:
-  static/RobotoMono-Thin.ttf
-  static/RobotoMono-ExtraLight.ttf
-  static/RobotoMono-Light.ttf
-  static/RobotoMono-Regular.ttf
-  static/RobotoMono-Medium.ttf
-  static/RobotoMono-SemiBold.ttf
-  static/RobotoMono-Bold.ttf
-  static/RobotoMono-ThinItalic.ttf
-  static/RobotoMono-ExtraLightItalic.ttf
-  static/RobotoMono-LightItalic.ttf
-  static/RobotoMono-Italic.ttf
-  static/RobotoMono-MediumItalic.ttf
-  static/RobotoMono-SemiBoldItalic.ttf
-  static/RobotoMono-BoldItalic.ttf
+in those cases you can use the static font files for Inter:
+  static/Inter-Thin.ttf
+  static/Inter-ExtraLight.ttf
+  static/Inter-Light.ttf
+  static/Inter-Regular.ttf
+  static/Inter-Medium.ttf
+  static/Inter-SemiBold.ttf
+  static/Inter-Bold.ttf
+  static/Inter-ExtraBold.ttf
+  static/Inter-Black.ttf
 
 Get started
 -----------
@@ -67,7 +62,7 @@ Android Apps
 
 License
 -------
-Please read the full license text (LICENSE.txt) to understand the permissions,
+Please read the full license text (OFL.txt) to understand the permissions,
 restrictions and requirements for usage, redistribution, and modification.
 
 You can use them in your products & projects – print or digital,
