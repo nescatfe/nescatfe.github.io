@@ -83,13 +83,12 @@ nav a:hover {
 .container {
   text-align: center;
   text-justify: inter-word;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   border: 2px double #6272a4;
   padding: 10px;
   border-radius: 10px;
 }
-
 p {
   color: #F9F6EE;
   text-align: justify;
@@ -106,7 +105,7 @@ a {
     align-items: center;
   }
   .container {
-    width: 90%;
+    width: 60%;
   }
 }
 footer {
