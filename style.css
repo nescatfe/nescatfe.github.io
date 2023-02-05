@@ -81,13 +81,13 @@ nav a:hover {
   height: 55%;
 }
 .container {
-  width: 50%;
+  width: 60%;
   text-align: center;
   text-justify: inter-word;
   margin: 0 auto;
-  border: 2px double #6272a4;
+  border: 3px double #6272a4;
   padding: 10px;
-  border-radius: 13px;
+  border-radius: 15px;
 }
 p {
   color: #F9F6EE;
@@ -107,7 +107,7 @@ footer {
   padding-top: 5px; /* add some padding for visual separation */
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   nav {
     flex-direction: column;
     align-items: center;
