@@ -99,15 +99,6 @@ a {
   color: #1DA1F2; /* or any other color of your choice */
   text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container {
-    width: 60%;
-  }
-}
 footer {
   color: #F9F6EE;
   text-align: center;
