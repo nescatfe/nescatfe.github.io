@@ -81,7 +81,7 @@ nav a:hover {
   height: 55%;
 }
 .container {
-  width: 45%;
+  width: 60%;
   text-align: center;
   text-justify: inter-word;
   margin: 0 auto;
@@ -107,24 +107,12 @@ footer {
   padding-top: 5px; /* add some padding for visual separation */
 }
 
-@media screen and (max-width: 570px) {
-  #menu {position:relative}
-  #menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
-  #menu ul.sub-menus {width:100%;position:static;}
-  #menu ul.sub-menus a {padding-left:30px;}
-  #menu li {display:block;float:none;width:auto;}
-  #menu input, #menu label {position:absolute;top:0;left:0;display:block}
-  #menu input {z-index:4}
-  #menu input:checked + label {color:white}
-  #menu input:checked + label:before {content:"\00d7"}
-  #menu input:checked ~ ul {display:block}
-}
-@media screen and (min-width: 570px) {
-  #menu {
-    padding-left: 0px;
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
   }
-  #menu ul {
-    width: max-content;
-    margin: auto;
+  .container {
+    width: 80%;
   }
 }
