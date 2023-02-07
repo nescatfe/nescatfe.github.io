@@ -15,3 +15,9 @@
  wss://eden.nostr.land
  wss://nostr-relay.untethr.me
  wss://node01.nostress.cc
+
+
+
+more information about list of relay :
+
+https://nostr.watch/relays/find#all
