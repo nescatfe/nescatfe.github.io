@@ -2,6 +2,6 @@ Form Registration for @mybae.id
 
 My Nostr public key : 
 Username : 
-Twitter username : 
 
-By sending this i agree with the term of service.
+By sending this i agree with the term of service. 
+read ToS > https://mybae.id/tos.txt
