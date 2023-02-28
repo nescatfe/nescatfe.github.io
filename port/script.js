@@ -1,12 +1,35 @@
-// Get the current hour in GMT+7 timezone
-const now = new Date();
-const hour = now.getHours() + 7;
+// get the current time in GMT+7 timezone
+const currentTime = new Date().toLocaleString("en-US", {
+  timeZone: "Asia/Jakarta",
+});
 
-// Check if the current time is between 7am and 5pm
-if (hour >= 7 && hour < 17) {
-  const dot = document.querySelector('.busy');
-  dot.classList.add('active');
+// get the hour component of the current time
+const currentHour = new Date(currentTime).getHours();
+
+// get the status indicator element
+const statusIndicator = document.getElementById("status-indicator");
+
+// get the status text and dot elements
+const statusText = statusIndicator.querySelector(".status-text");
+const statusDot = statusIndicator.querySelector(".status-dot");
+
+// determine the status based on the current time
+let status = "";
+let dotColor = "";
+
+if (currentHour >= 6 && currentHour < 17) {
+  status = "Busy";
+  dotColor = "red";
 } else {
-  const dot = document.querySelector('.free');
-  dot.classList.add('active');
+  status = "Free Time";
+  dotColor = "green";
 }
+
+// set the status text and dot color
+statusText.textContent = status;
+statusDot.style.backgroundColor = dotColor;
+
+// make the dot breathe
+setInterval(() => {
+  statusDot.classList.toggle("breathing");
+}, 1000);

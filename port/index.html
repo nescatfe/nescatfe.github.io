@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Portfolio</title>
+	<title>Coolskyz Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<h1 id="site-name">My Portfolio</h1>
-		<nav>
-			<a href="#">About</a>
-			<a href="#">Works</a>
-			<a href="#">Tools</a>
-		</nav>
+		<div class="top-bar">
+			<h1 class="site-name">Coolskyz</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Works</a></li>
+					<li><a href="#tools">Tools</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-content">
+			<h2>Yo, I'm a Coolskyz</h2>
+			<p class="header-description">I'm a software engineer who loves to code and create things.</p>
+		</div>
 	</header>
-	<main>
-		<section>
-			<h2>Yo, I'm Coolskyz</h2>
-			<p>I'm a software engineer with a passion for creating innovative solutions to complex problems.</p>
-		</section>
-		<section>
-			<h2>Projects</h2>
-			<div class="project-box">
-				<img src="project1.jpg">
-				<div class="project-info">
-					<h3>Project 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla tellus vitae nunc lobortis, ac eleifend eros lobortis. Proin et massa sapien. Duis fermentum, nibh vel feugiat auctor, eros leo congue enim, at accumsan est arcu quis leo.</p>
+	
+	<section id="projects">
+		<h3>Projects</h3>
+		<div class="project-boxes">
+			<div class="project-box project-box-1">
+				<img src="project1.jpg" alt="Project 1">
+				<div class="project-box-text">
+					<h4>Project 1</h4>
+					<p>Description here</p>
 				</div>
 			</div>
-			<div class="project-box">
-				<img src="project2.jpg">
-				<div class="project-info">
-					<h3>Project 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla tellus vitae nunc lobortis, ac eleifend eros lobortis. Proin et massa sapien. Duis fermentum, nibh vel feugiat auctor, eros leo congue enim, at accumsan est arcu quis leo.</p>
+			<div class="project-box project-box-2">
+				<img src="project2.jpg" alt="Project 2">
+				<div class="project-box-text">
+					<h4>Project 2</h4>
+					<p>Description here</p>
 				</div>
 			</div>
-			<div class="project-box">
-				<img src="project3.jpg">
-				<div class="project-info">
-					<h3>Project 3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla tellus vitae nunc lobortis, ac eleifend eros lobortis. Proin et massa sapien. Duis fermentum, nibh vel feugiat auctor, eros leo congue enim, at accumsan est arcu quis leo.</p>
+			<div class="project-box project-box-3">
+				<img src="project3.jpg" alt="Project 3">
+				<div class="project-box-text">
+					<h4>Project 3</h4>
+					<p>Description here</p>
 				</div>
 			</div>
-		</section>
-	</main>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="about">
+		<div class="about-boxes">
+			<div class="about-box about-box-1">
+				<h3>ME</h3>
+				<p>Description here</p>
+			</div>
+			<div class="about-box about-box-2">
+				<h3>My Status</h3>
+				<p>Description here</p>
+				<div class="status-indicator">
+					<div class="indicator-dot"></div>
+					<span class="indicator-label"></span>
+				</div>
+			</div>
+			<div class="about-box about-box-3">
+				<h3>Contact Me</h3>
+				<p>Email: email@example.com<br>Twitter: @coolskyz</p>
+			</div>
+		</div>
+	</section>
+
 	<footer>
-		<p id="time-geo"></p>
-		<script src="script.js"></script>
+		<p>&copy; 2023 Coolskyz. All rights reserved.</p>
 	</footer>
+	
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

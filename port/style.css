@@ -1,116 +1,154 @@
-/* Reset default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
+/* Set default font family and color */
 body {
   font-family: Calibri, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   color: #333;
 }
 
-/* Header styles */
+/* Set the background gradient color */
+body {
+  background: linear-gradient(70deg, #ffffff, #ff6ca3);
+}
+
+/* Style the header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
+  margin-top: 40px;
+  text-align: center;
 }
 
-#site-name {
-  font-family: 'Custom Font', sans-serif;
-  font-size: 2rem;
-}
-
-nav a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
+header h1 {
+  font-size: 48px;
   font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main content styles */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section {
-  padding: 20px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.project-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.project-box:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.project-box img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.project-info h3 {
-  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.project-info p {
-  margin-bottom: 0;
+/* Style the navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
 }
 
-/* Footer styles */
-footer {
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar li a:hover {
+  color: #ff6ca3;
+}
+
+/* Style the project boxes */
+.project-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.project-box {
+  width: 30%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-box img {
+  width: 40%;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+}
+
+.project-box .project-info {
+  width: 60%;
+  height: 100%;
+  float: right;
   padding: 20px;
-  background-color: #f5f5f5;
 }
 
-#time-geo {
-  font-size: 1.2rem;
-  margin-right: 20px;
+.project-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.busy {
-  background-color: #ff0000;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.project-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.free {
-  background-color: #00ff00;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.project-box:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
+
+/* Style the horizontal line */
+hr {
+  margin: 80px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Style the "ME" section */
+.me {
+  width: 30%;
+  padding-right: 20px;
+}
+
+.me h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.me p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the "My Status" section */
+.my-status {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.my-status h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.status-indicator {
+  display: inline-block;
+  position: relative;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius:
