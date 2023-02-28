@@ -42,10 +42,9 @@ header {
 
 /* Style header text */
 h1 {
-	font-size: 3rem;
+	font-size: 85px;
 	color: #333;
 }
-
 /* Center and style form */
 form {
 	display: flex;
@@ -124,6 +123,7 @@ footer {
 
 /* Style footer text */
 p {
+	font-family: sans-serif;
 	font-size: 12px;
 }
 
