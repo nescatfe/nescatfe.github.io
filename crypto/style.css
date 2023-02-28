@@ -84,3 +84,33 @@ footer {
 p {
 	font-size: 1rem;
 }
+
+nav {
+	background-color: #333;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+nav li {
+	margin: 0 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+nav a:hover {
+	color: #00bfff;
+}
