@@ -5,7 +5,7 @@
 	<title>CRYPTOSEC</title>
 	<meta name="description" content="CRYPTOSEC is a tool for performing security checks on cryptocurrency tokens. Check the security of your token by entering its address.">
 	<meta name="keywords" content="crypto security check, token crypto check, cryptocurrency, token, security, check">
-	<meta name="author" content="Your Name">
+	<meta name="author" content="coolskyz">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script>
@@ -23,11 +23,17 @@
 	</header>
 	<main>
 		<form>
-			<label for="token_address">Enter token address:</label>
+			<label for="token_address">Enter BSC token address:</label>
 			<input type="text" name="token_address" id="token_address" required>
 			<button type="button" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app</button>
 			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/bsc/')" target="_blank">tokensniffer.com</button>
 			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/56/')" target="_blank">gopluslabs.io</button>
+		</form>
+		<form>
+			<label for="eth_token_address">Enter ETH token address:</label>
+			<input type="text" name="eth_token_address" id="eth_token_address" required>
+			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/eth/')" target="_blank">tokensniffer.com (ETH)</button>
+			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/1/')" target="_blank">gopluslabs.io (ETH)</button>
 		</form>
 	</main>
 	<footer>
