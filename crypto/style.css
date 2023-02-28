@@ -1,9 +1,14 @@
+@font-face {
+	font-family: 'HurmeFont';
+	src: url('HurmeGeometricSans2SemiBold.otf') format('opentype');
+}
+
 /* Reset default browser styles */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family: 'HurmeFont', sans-serif;
 }
 
 /* Style for the boxes */
@@ -19,6 +24,7 @@
 
 /* Set default font size and line height */
 body {
+	font-family: 'HurmeFont', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 }
