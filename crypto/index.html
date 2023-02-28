@@ -16,15 +16,36 @@
 			}
 		}
 
-	</script>
+		window.onload = function() {
+			// set up event listener for Token Scanner nav item
+			document.getElementById("token-scanner").addEventListener("click", function() {
+				// show token scanner form and hide chart form
+				document.getElementById("token-scanner-form").style.display = "block";
+				document.getElementById("chart-form").style.display = "none";
+			});
 
+			// set up event listener for Chart nav item
+			document.getElementById("chart").addEventListener("click", function() {
+				// hide token scanner form and show chart form
+				document.getElementById("token-scanner-form").style.display = "none";
+				document.getElementById("chart-form").style.display = "block";
+			});
+		};
+	</script>
 </head>
 <body>
 	<header>
 		<h1>CRYPTOSEC</h1>
+		<nav>
+			<ul>
+				<li><a href="#" id="token-scanner">Token Scanner</a></li>
+				<li><a href="#" id="chart">Chart</a></li>
+			</ul>
+		</nav>
 	</header>
 	<main>
-		<form>
+		<!-- Token Scanner form -->
+		<form id="token-scanner-form">
 			<label for="token_address">Enter token address:</label>
 			<input type="text" name="token_address" id="token_address" required>
 			<button type="button" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app</button>
@@ -33,9 +54,41 @@
 			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/eth/')" target="_blank">tokensniffer.com (ETH)</button>
 			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/1/')" target="_blank">gopluslabs.io (ETH)</button>
 		</form>
+
+		<!-- Chart form -->
+		<form id="chart-form" style="display:none">
+			<label for="chart_token_address">Enter token address:</label>
+			<input type="text" name="chart_token_address" id="chart_token_address" required>
+			<button type="button" onclick="redirectTo('https://poocoin.app/tokens/')" target="_blank">poocoin</button>
+			<button type="button" onclick="redirectTo('https://www.dextools.io/app/')" target="_blank">dextools</button>
+			<button type="button" onclick="redirectTo('https://www.bogged.finance/')" target="_blank">bogged.finance</button>
+			<button type="button" onclick="redirectTo('https://goswappcharts.web.app/')" target="_blank">goswapp</button>
+		</form>
 	</main>
 	<footer>
 		<p>&copy; 2023 CRYPTOSEC</p>
 	</footer>
+	<script>
+		// Show/hide chart form
+		var chartForm = document.getElementById("chart-form");
+		var tokenForm = document.getElementById("token-form");
+		
+		function showChartForm() {
+			chartForm.style.display = "block";
+			tokenForm.style.display = "none";
+		}
+		
+		function showTokenForm() {
+			chartForm.style.display = "none";
+			tokenForm.style.display = "block";
+		}
+		
+		// Navbar event listeners
+		var tokenScannerNav = document.getElementById("token-scanner-nav");
+		var chartNav = document.getElementById("chart-nav");
+		
+		tokenScannerNav.addEventListener("click", showTokenForm);
+		chartNav.addEventListener("click", showChartForm);
+	</script>
 </body>
 </html>
