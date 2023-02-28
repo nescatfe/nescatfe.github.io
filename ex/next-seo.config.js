@@ -4,8 +4,8 @@
  * @type {import('next-seo').NextSeoProps}
  */
 const defaultSEOConfig = {
-  defaultTitle: 'Christopher Angelo — Software Engineer and Community Manager',
-  titleTemplate: '%s | Christopher Angelo — Software Engineer and Community Manager',
+  defaultTitle: 'Coolskyz',
+  titleTemplate: '%s | Coolskyz — Software Engineer and Community Manager',
 
   description:
     'A Full-stack Software Engineer and a community leader with a passion for building software that improves the lives of others.',
@@ -15,17 +15,17 @@ const defaultSEOConfig = {
     locale: 'en_US',
     images: [
       {
-        url: `${process.env.SITE_URL ?? 'https://angeloanan.xyz'}/images/og.png`,
-        alt: 'Christopher Angelo — Software Engineer and Community Manager'
+        url: `${process.env.SITE_URL ?? 'https://mybae.id'}/images/og.png`,
+        alt: 'Coolskyz — Software Engineer and Community Manager'
       }
     ],
-    url: process.env.SITE_URL ?? 'https://angeloanan.xyz',
+    url: process.env.SITE_URL ?? 'https://mybae.id',
     site_name: 'Christopher Angelo - Full-stack Developer'
   },
 
   twitter: {
-    handle: '@uwungelo',
-    site: '@uwungelo',
+    handle: '@fajar.wh',
+    site: '@fajar.wh',
     cardType: 'summary_large_image'
   },
 

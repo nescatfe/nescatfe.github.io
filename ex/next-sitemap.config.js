@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://angeloanan.xyz',
+  siteUrl: process.env.SITE_URL || 'https://mybae.id',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   robotsTxtOptions: {
