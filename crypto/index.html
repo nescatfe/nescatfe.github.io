@@ -15,13 +15,7 @@
 				window.open(url + tokenAddress, "_blank");
 			}
 		}
-		
-		function redirectToEth(url) {
-			var ethTokenAddress = document.getElementById("eth_token_address").value;
-			if (ethTokenAddress) {
-				window.open(url + ethTokenAddress, "_blank");
-			}
-		}
+
 	</script>
 
 </head>
@@ -31,15 +25,11 @@
 	</header>
 	<main>
 		<form>
-			<label for="token_address">Enter BSC token address:</label>
+			<label for="token_address">Enter token address:</label>
 			<input type="text" name="token_address" id="token_address" required>
 			<button type="button" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app</button>
 			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/bsc/')" target="_blank">tokensniffer.com</button>
 			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/56/')" target="_blank">gopluslabs.io</button>
-		</form>
-		<form>
-			<label for="eth_token_address">Enter ETH token address:</label>
-			<input type="text" name="eth_token_address" id="eth_token_address" required>
 			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/eth/')" target="_blank">tokensniffer.com (ETH)</button>
 			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/1/')" target="_blank">gopluslabs.io (ETH)</button>
 		</form>
