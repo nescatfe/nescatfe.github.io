@@ -23,8 +23,8 @@
 			<h1>💸💸💰CRYPTOOLS💰💸💸</h1>
 			<nav>
 				<ul>
-					<li><a href="#">Token Scanner</a></li>
-					<li><a href="#">Chart</a></li>
+					<li><a href="#token_scanner">Token Scanner</a></li>
+					<li><a href="#chart">Chart</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -32,7 +32,7 @@
 			<form>
 				<label for="token_address">Enter token address:</label>
 				<input type="text" name="token_address" id="token_address" required>
-				<div class="box">
+				<div class="box" id="token_scanner"> <!-- added id -->
 					<h2>Token Scanner 🔎🔎</h2>
 					<button type="button" class="button_bsc" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app (BSC)</button>
 					<button type="button" class="button_bsc" onclick="redirectTo('https://tokensniffer.com/token/bsc/')" target="_blank">tokensniffer.com (BSC)</button>
@@ -40,7 +40,7 @@
 					<button type="button" class="button_eth" onclick="redirectTo('https://tokensniffer.com/token/eth/')" target="_blank">tokensniffer.com (ETH)</button>
 					<button type="button" class="button_eth" onclick="redirectTo('https://gopluslabs.io/token-security/1/')" target="_blank">gopluslabs.io (ETH)</button>
 				</div>
-				<div class="box">
+				<div class="box" id="chart"> <!-- added id -->
 					<h2>Chart 📈📈</h2>
 					<button type="button" class="button_bsc" onclick="redirectTo('https://poocoin.app/tokens/')" target="_blank">poocoin.app (BSC)</button>
 					<button type="button" class="button_bsc" onclick="redirectTo('https://www.dextools.io/app/en/bnb/pair-explorer/')" target="_blank">dextools.io (BSC)</button>
@@ -55,4 +55,23 @@
 		<footer>
 			<p>&copy; 2023 cryptools by coolskyz  | 📧 mybae.service@gmail.com</p>
 		</footer>
+		<!-- added script to handle scrolling to sections -->
+		<script>
+			// get references to the navbar links and the sections to scroll to
+			const tokenScannerLink = document.querySelector('a[href="#token_scanner"]');
+			const chartLink = document.querySelector('a[href="#chart"]');
+			const tokenScannerSection = document.getElementById('token_scanner');
+			const chartSection = document.getElementById('chart');
+			
+			// add click event listeners to the navbar links to scroll to the corresponding sections
+			tokenScannerLink.addEventListener('click', (event) => {
+				event.preventDefault();
+				tokenScannerSection.scrollIntoView({ behavior: 'smooth' });
+			});
+			
+			chartLink.addEventListener('click', (event) => {
+				event.preventDefault();
+				chartSection.scrollIntoView({ behavior: 'smooth' });
+			});
+		</script>
 	</body>
