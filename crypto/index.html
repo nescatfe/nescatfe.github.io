@@ -5,21 +5,29 @@
 	<title>CRYPTOSEC</title>
 	<meta name="description" content="CRYPTOSEC is a tool for performing security checks on cryptocurrency tokens. Check the security of your token by entering its address.">
 	<meta name="keywords" content="crypto security check, token crypto check, cryptocurrency, token, security, check">
-	<meta name="author" content="coolskyz">
+	<meta name="author" content="Your Name">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/crypto/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function redirectTo(url) {
+			var tokenAddress = document.getElementById("token_address").value;
+			if (tokenAddress) {
+				window.open(url + tokenAddress, "_blank");
+			}
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<h1>CRYPTOSEC</h1>
 	</header>
 	<main>
-		<form action="" method="GET">
+		<form>
 			<label for="token_address">Enter token address:</label>
 			<input type="text" name="token_address" id="token_address" required>
-			<button type="submit" name="moonarch" formaction="https://moonarch.app/token/" target="_blank">moonarch.app</button>
-			<button type="submit" name="tokensniffer" formaction="https://tokensniffer.com/token/bsc/" target="_blank">tokensniffer.com</button>
-			<button type="submit" name="gopluslabs" formaction="https://gopluslabs.io/token-security/56/" target="_blank">gopluslabs.io</button>
+			<button type="button" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app</button>
+			<button type="button" onclick="redirectTo('https://tokensniffer.com/token/bsc/')" target="_blank">tokensniffer.com</button>
+			<button type="button" onclick="redirectTo('https://gopluslabs.io/token-security/56/')" target="_blank">gopluslabs.io</button>
 		</form>
 	</main>
 	<footer>

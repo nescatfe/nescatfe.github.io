@@ -1,57 +1,86 @@
+/* Reset default browser styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* Set default font size and line height */
 body {
-  background-color: #F2EFE9;
-  color: #343A40;
-  font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
+/* Set background color */
+body {
+	background-color: #F6F6F6;
+}
+
+/* Center header text */
+header {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+/* Style header text */
 h1 {
-  text-align: center;
+	font-size: 3rem;
+	color: #333;
 }
 
+/* Center and style form */
 form {
-  margin: 0 auto;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
 }
 
+/* Style form label */
 label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 18px;
+	font-size: 1.2rem;
+	color: #333;
+	margin-bottom: 0.5rem;
 }
 
+/* Style form input */
 input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-bottom: 2px solid #777;
-  transition: border-color 0.3s ease-in-out;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 1px solid #999;
+	font-size: 1rem;
+	width: 100%;
+	max-width: 400px;
 }
 
-input[type="text"]:focus {
-  outline: none;
-  border-color: #343A40;
-}
-
+/* Style form buttons */
 button {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #343A40;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	cursor: pointer;
 }
 
+/* Style form buttons on hover */
 button:hover {
-  background-color: #555;
+	background-color: #555;
+}
+
+/* Center and style footer */
+footer {
+	text-align: center;
+	margin-top: 2rem;
+	padding: 1rem;
+	background-color: #333;
+	color: #fff;
+}
+
+/* Style footer text */
+p {
+	font-size: 1rem;
 }
