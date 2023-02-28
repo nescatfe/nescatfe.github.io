@@ -15,7 +15,15 @@
 				window.open(url + tokenAddress, "_blank");
 			}
 		}
+		
+		function redirectToEth(url) {
+			var ethTokenAddress = document.getElementById("eth_token_address").value;
+			if (ethTokenAddress) {
+				window.open(url + ethTokenAddress, "_blank");
+			}
+		}
 	</script>
+
 </head>
 <body>
 	<header>
