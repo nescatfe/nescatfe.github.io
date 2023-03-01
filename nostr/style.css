@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6272a4;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+@font-face {
+  font-family: "Inter Regular";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("./fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {  
+  width: 75%;
+  text-align: center;
+  text-justify: inter-word;
+  margin: 0 auto;
+  background-color: #282a36;
+  color: black;
+  font-family: "Inter Regular", sans-serif;
+}
+
+.red-text {
+  color: #ff79c6;
+}
+
+.green-text {
+  color: #bd93f9;
+}
+
+.pink-text {
+  font-family: "Inter Regular";
+  font-size: 21px;
+  color: #bd93f9;
+}
+
+.footer-text {
+  font-family: "Inter Regular";
+  font-size: 10px;
+  color: #ff79c6;
+}
+
+h1 {
+  font-family: "Inter Bold";
+  color: #F9F6EE;
+  margin: 0; /* remove the default margin */
+  font-size: 30px;
+}
+h2 {
+  font-family: "Inter Bold";
+  color: #F9F6EE;
+  font-size: 28px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+nav a:hover {
+  background-color: #ff79c6;
+  height: 55%;
+}
+p {
+  color: #F9F6EE;
+  text-align: justify;
+  font-family: 'Inter Regular', monospace;
+  font-size: 15px;
+}
+a {
+  color: #1DA1F2; /* or any other color of your choice */
+  text-decoration: none;
+}
+footer {
+  color: #F9F6EE;
+  text-align: center;
+  font-size: 11px;
+  border-top: 1px solid gray; /* add this line */
+  padding-top: 5px; /* add some padding for visual separation */
+}
