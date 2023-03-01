@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #AAE3E2, #FFCEFE);
+  background: linear-gradient(to bottom right, #cbfeff, #FFCEFE);
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -130,7 +130,7 @@ p {
 }
 
 .box:hover img {
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .box img {
