@@ -33,13 +33,13 @@ if (hour >= 0 && hour < 4) {
   statusText = 'Busy\u00A0';
   dotClass = 'red-dot';
 } else if (hour >= 17 && hour < 19) {
-  statusText = 'Free Time\u00A0';
+  statusText = 'Free 🎮\u00A0';
   dotClass = 'green-dot';
 } else if (hour >= 19 && hour < 22) {
   statusText = 'Working 👨🏽‍💻\u00A0';
   dotClass = 'orange-dot';
 } else {
-  statusText = 'Free Time\u00A0';
+  statusText = 'Free 🎮\u00A0';
   dotClass = 'green-dot';
 }
 
@@ -49,4 +49,4 @@ dot.classList.add(dotClass);
 
 // Set the time in the status container
 const timeText = now.toLocaleTimeString([], { timeZone: 'GMT', hour12: false, hour: '2-digit', minute: '2-digit' });
-document.getElementById('time').textContent = `\u00A0| ${timeText} GMT+7 `;
+document.getElementById('time').textContent = `\u00A0/my status rn/ - ${timeText} GMT+7 `;
