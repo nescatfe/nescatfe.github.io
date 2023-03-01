@@ -43,7 +43,6 @@ if (hour >= 0 && hour < 4) {
   dotClass = 'green-dot';
 }
 
-
 // Set the text and dot class in the status container
 document.getElementById('status-text').textContent = statusText;
 dot.classList.add(dotClass);
