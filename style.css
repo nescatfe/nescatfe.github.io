@@ -56,7 +56,6 @@ p {
   margin-right: auto;
 }
 
-
 .date {
   font-size: 1.2rem;
   color: #777;
@@ -116,13 +115,9 @@ p {
 
 
 
-
-
-
 .box-container {
   max-width: 800px;
   margin: 0 auto 0;
-
 }
 
 .box {
@@ -152,7 +147,6 @@ p {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 
 .box-text {
   flex-grow: 1;
