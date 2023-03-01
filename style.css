@@ -6,10 +6,6 @@
   font-family: "noto-serif-regular";
   src: url("fonts/NotoSerif-Regular.ttf");
 }
-@font-face {
-  font-family: "imbplex-medium";
-  src: url("fonts/IBMPlexSans-Medium.ttf");
-}
 
 body {
   background: linear-gradient(to bottom right, #AAE3E2, #FFCEFE);
@@ -160,7 +156,7 @@ p {
 }
 
 .box-text p {
-  font-family: "imbplex-medium", monospace;
+  font-family: "noto-serif-regular", monospace;
   margin: 0 0 5px 0;
   font-size: 16px;
   line-height: 1.5;
