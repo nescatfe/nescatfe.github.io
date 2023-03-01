@@ -1,8 +1,21 @@
+@font-face {
+  font-family: "hurme-geo";
+  src: url("fonts/hurme/HurmeGeometricSans2.otf");
+}
+@font-face {
+  font-family: "hurme-bold";
+  src: url("fonts/hurme/HurmeGeometricSans2-Bold.otf");
+}
+@font-face {
+  font-family: "chrismast-snow";
+  src: url("fonts/ChristmasSnow-lLEX.ttf");
+}
+
 body {
-  background: linear-gradient(to bottom right, #fff, #ff99cc);
+  background: linear-gradient(to bottom right, #AAE3E2, #FFCEFE);
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "pagefonts", sans-serif;
   text-align: center;
 }
 
@@ -14,17 +27,32 @@ body {
   height: 100vh;
 }
 
+
+
 h1 {
+  font-family: "hurme-bold", sans-serif;
   font-size: 3.2rem;
   margin-bottom: 0;
   color: #333;
+  text-align: left; 
+  margin-left: 50px; 
+}
+
+h1 span {
+  font-family: "chrismast-snow", sans-serif;
 }
 
 p {
-  font-size: 1.5rem;
+  font-family: "hurme-geo", sans-serif;
+  font-size: 23px;
   margin-top: 0;
-  color: #777;
+  color: #3C4048;
+  text-align: left; 
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto;
 }
+
 
 .date {
   font-size: 1.2rem;
@@ -32,6 +60,7 @@ p {
 }
 
 .status-container {
+  color: #777;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,23 +74,27 @@ p {
 }
 
 .dot {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 0.6rem;
+  width: 0.6rem;
   border-radius: 50%;
   animation: pulse 0.7s ease-out infinite;
-  margin: 10px;
+  margin: 7px;
 }
 
 .red-dot {
-  background-color: red;
+  background-color: #ff0000;
 }
 
 .green-dot {
-  background-color: green;
+  background-color: #38b000;
 }
 
 .silver-dot {
-  background-color: silver;
+  background-color: #adb5bd;
+}
+
+.orange-dot {
+  background-color: #ffaa00;
 }
 
 @keyframes pulse {
