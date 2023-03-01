@@ -33,17 +33,13 @@ h1 {
   font-size: 66px;
   margin-bottom: 0;
   color: #333;
-  text-align: left; 
+  text-align: justify; 
   margin-left: 50px; 
-}
-
-h1 span {
-  font-family: "chrismast-snow", sans-serif;
 }
 
 p {
   font-family: "hurme-geo", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 0;
   color: #3C4048;
   text-align: justify; 
