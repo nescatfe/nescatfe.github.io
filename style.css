@@ -3,10 +3,6 @@
   src: url("fonts/hurme/HurmeGeometricSans2.otf");
 }
 @font-face {
-  font-family: "hurme-bold";
-  src: url("fonts/hurme/HurmeGeometricSans2-Bold.otf");
-}
-@font-face {
   font-family: "noto-serif-regular";
   src: url("fonts/NotoSerif-Regular.ttf");
 }
