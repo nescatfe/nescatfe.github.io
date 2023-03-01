@@ -1,32 +1,50 @@
-// Get the current time
-const now = new Date();
+// Set the time zone to GMT+7
+const timezoneOffset = 420;
+const now = new Date(Date.now() + timezoneOffset * 60000);
 
-// Get the hour of the current time
+// Get the hour of the current time in GMT+7
 const hour = now.getHours();
 
 // Get the status container element and the dot element
 const statusContainer = document.querySelector('.status-container');
 const dot = document.querySelector('.dot');
 
-// Set the default status text and dot color
-let statusText = 'Sleep';
-let dotColor = 'silver';
+// Set the default status text and dot class
+let statusText = 'Busy\u00A0';
+let dotClass = 'red-dot';
 
-// Determine the status and dot color based on the hour
+// Determine the status and dot class based on the hour in GMT+7
 if (hour >= 8 && hour < 17) {
-	statusText = 'Busy';
-	dotColor = 'red';
-} else if (hour >= 17 && hour < 21) {
-	statusText = 'Free Time';
-	dotColor = 'green';
-} else if (hour >= 21 && hour <= 23 || hour >= 0 && hour < 2) {
-	statusText = 'Working';
-	dotColor = 'red';
+  statusText = 'Busy\u00A0';
+  dotClass = 'red-dot';
+} else if (hour >= 18 && hour < 21) {
+  statusText = 'Free Time\u00A0';
+  dotClass = 'green-dot';
+} else if (hour >= 22 || hour < 2) {
+  statusText = 'Resting\u00A0';
+  dotClass = 'silver-dot';
 }
 
-// Set the text and dot color in the status container
+// Set the text and dot class in the status container
 document.getElementById('status-text').textContent = statusText;
-dot.style.backgroundColor = dotColor;
+dot.classList.add(dotClass);
 
-// Set the date and time in the status container
-document.getElementById('date-time').textContent = now.toLocaleString();
+// Set the time in the status container
+const timeText = now.toLocaleTimeString([], { timeZone: 'GMT', hour12: false, hour: '2-digit', minute: '2-digit' });
+document.getElementById('time').textContent = `- Working | ${timeText} GMT+7 `;
+
+// Change the status text and dot class based on the controller page button
+document.getElementById('status-btn').addEventListener('click', function() {
+  const statusOptions = document.getElementById('status-options');
+  const selectedStatus = statusOptions.options[statusOptions.selectedIndex].value;
+  
+  const dotOptions = document.getElementById('dot-options');
+  const selectedDot = dotOptions.options[dotOptions.selectedIndex].value;
+  
+  statusText = selectedStatus + '\u00A0';
+  dot.classList.remove(dotClass);
+  dot.classList.add(selectedDot);
+  dotClass = selectedDot;
+  
+  document.getElementById('status-text').textContent = statusText;
+});
