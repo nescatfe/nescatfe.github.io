@@ -10,22 +10,22 @@ const statusContainer = document.querySelector('.status-container');
 const dot = document.querySelector('.dot');
 
 // Set the default status text and dot class
-let statusText = 'Busy\u00A0';
+let statusText = 'Busy';
 let dotClass = 'red-dot';
 
 // Determine the status and dot class based on the hour in GMT+7
 if (hour >= 8 && hour < 17) {
-  statusText = 'Busy\u00A0';
+  statusText = 'Busy';
   dotClass = 'red-dot';
 } else if (hour >= 18 && hour < 21) {
-  statusText = 'Free Time\u00A0';
+  statusText = 'Free Time';
   dotClass = 'green-dot';
 } else if (hour >= 22 || hour < 2) {
-  statusText = 'Resting\u00A0';
+  statusText = 'Resting';
   dotClass = 'silver-dot';
 }
 
-// Set the text and dot class in the status container
+// Set the initial text and dot class in the status container
 document.getElementById('status-text').textContent = statusText;
 dot.classList.add(dotClass);
 
@@ -33,18 +33,25 @@ dot.classList.add(dotClass);
 const timeText = now.toLocaleTimeString([], { timeZone: 'GMT', hour12: false, hour: '2-digit', minute: '2-digit' });
 document.getElementById('time').textContent = `- Working | ${timeText} GMT+7 `;
 
-// Change the status text and dot class based on the controller page button
-document.getElementById('status-btn').addEventListener('click', function() {
-  const statusOptions = document.getElementById('status-options');
-  const selectedStatus = statusOptions.options[statusOptions.selectedIndex].value;
-  
-  const dotOptions = document.getElementById('dot-options');
-  const selectedDot = dotOptions.options[dotOptions.selectedIndex].value;
-  
-  statusText = selectedStatus + '\u00A0';
-  dot.classList.remove(dotClass);
-  dot.classList.add(selectedDot);
-  dotClass = selectedDot;
-  
-  document.getElementById('status-text').textContent = statusText;
+// Listen for changes to the status text and dot class from the controller page
+window.addEventListener('message', (event) => {
+  // Only allow messages from the same origin
+  if (event.origin !== window.location.origin) {
+    return;
+  }
+
+  const { type, status, dot } = event.data;
+
+  if (type === 'updateStatus') {
+    // Update the status text
+    statusText = status;
+    document.getElementById('status-text').textContent = statusText;
+  } else if (type === 'updateDot') {
+    // Remove any existing dot class
+    dot.classList.remove(dotClass);
+
+    // Update the dot class
+    dotClass = dot;
+    dot.classList.add(dotClass);
+  }
 });
