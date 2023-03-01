@@ -33,13 +33,13 @@ if (hour >= 0 && hour < 4) {
   statusText = 'Busy\u00A0';
   dotClass = 'red-dot';
 } else if (hour >= 17 && hour < 19) {
-  statusText = 'Free 🎮\u00A0';
+  statusText = 'Free time 🎮\u00A0';
   dotClass = 'green-dot';
 } else if (hour >= 19 && hour < 22) {
   statusText = 'Working 👨🏽‍💻\u00A0';
   dotClass = 'orange-dot';
 } else {
-  statusText = 'Free 🎮\u00A0';
+  statusText = 'Free time 🎮\u00A0';
   dotClass = 'green-dot';
 }
 
