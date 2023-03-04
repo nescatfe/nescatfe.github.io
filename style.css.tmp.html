@@ -9,18 +9,16 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, white, #ffdfe5);
+  background: radial-gradient(circle at bottom center, #ffb1e165, transparent 60%),
+              radial-gradient(circle at bottom left, #fff5f160, transparent 80%),
+              radial-gradient(circle at right, #ffb09660, transparent 40%), rgb(245 245 245);
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
   font-family: "hurme-geo", sans-serif;
-  text-align: center;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -35,6 +33,19 @@ h1 {
   margin-left: 50px; 
 }
 
+h2 {
+  font-size: 35px;
+  margin-left: 490px; 
+}
+
+a {  
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;  
+  margin-bottom: 1rem;
+}
+
 p {
   font-family: "hurme-geo", sans-serif;
   font-size: 25px;
@@ -44,6 +55,11 @@ p {
   max-width: 800px; 
   margin-left: auto; 
   margin-right: auto;
+}
+
+hr {
+  margin-top: 9rem;
+  width: 41.5%;
 }
 
 .date {
@@ -56,7 +72,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: -1.5rem;
+  margin-bottom: 4rem;
 }
 
 .status-text {
@@ -103,18 +120,11 @@ p {
   }
 }
 
-h2 {
-  font-size: 33px;
-/*font-family: "hurme-geo", sans-serif;*/
-  text-align: left; 
-  margin-left: -10px; 
-}
-
-/*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*/
+/*/BOX/*/
 
 .box-container {
   max-width: 800px;
-  margin-left: -200px;
+  margin-left: 0px;
 }
 
 .box {
@@ -154,7 +164,7 @@ h2 {
   flex-grow: 1;
   text-align: left;
   margin: 10px 5px 10px 5px;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;  
 }
 
@@ -178,7 +188,7 @@ h2 {
 }
 
 
-/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+/*/HEADER/*/
 
 header {
   font-family: Arial, sans-serif;
@@ -205,14 +215,12 @@ header:before {
 }
 
 .left {
-  font-size: 21px;
   float: left;
   margin-left: 90px;
   line-height: 60px;
 }
 
 .right {
-  font-size: 18px;
   float: right;
   margin-right: 90px;
   line-height: 60px;
@@ -245,41 +253,44 @@ nav li a {
 }
 
 
-/*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*/
-
+/*/SECTION/*/
 /* Style for the container element */
 .section-container {
-  margin-left: 140px; 
   display: flex;
   flex-direction: row;
+  margin-left: 25rem;  
 }
 
-.section-container a {
-  display: block;
+.section {
+  display: flex;
+  margin-top: 0.8rem;
+  margin-left: 5.2rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.section-container a {  
   color: black;
-  text-align: left;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 0.4;
-  margin-bottom: 10px;
+  font-size: 16px;  
+  margin-bottom: 1rem;
 }
 
 /* Style for the sections */
-.section {
-  flex: 1;
-  margin: 90px;
-}
-
 /* Style for the first section */
-.section-1 {
+.section-1 {  
+  display: flex;
+  flex-direction: column;
 }
 
-.section-2 {  
+.section-2 {   
+  display: flex;
+  flex-direction: column;
 }
 
 /* Style for the third section */
 .section-3 {
-  
-}
-</style>
+  display: flex;
+  flex-direction: column;
+}</style>
