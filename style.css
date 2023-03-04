@@ -162,10 +162,11 @@ h2 {
 .box-text h4 {
   margin: 10px 5px 10px 5px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 .box-text p {
+  text-align: left;
   font-family: "hurme-geo", monospace;
   margin: 10px 5px 10px 5px;
   font-size: 16px;
