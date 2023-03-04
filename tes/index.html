@@ -1,3 +1,100 @@
-<link rel="stylesheet" href="style.css">
-<div class="box1"></div>
-<div class="box2"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+/*      background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */*/
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        backdrop-filter: blur(10px); /* Apply blur to the content behind the header */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+      }
+
+      header:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: inherit;
+        filter: blur(10px);
+        z-index: -1;
+      }
+
+      .left {
+        float: left;
+        margin-left: 20px;
+        line-height: 50px;
+      }
+
+      .right {
+        float: right;
+        margin-right: 20px;
+        line-height: 50px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      nav li a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .content {
+        margin-top: 50px;
+        height: 1000px;
+        background-image: url('https://picsum.photos/id/237/1920/1080'); /* Background image for content */
+        background-size: cover;
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <span>mybae.id</span>
+      </div>
+      <div class="right">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <!-- Content goes here -->
+    </div>
+    <script>
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
