@@ -25,7 +25,8 @@ body {
 
 h1 {
   font-family: "hurme-geo", sans-serif;
-  font-size: 66px;
+  font-size: 50px;
+  margin-top: 8rem;
   margin-bottom: 1rem;
   color: #333;
   text-align: left; 
@@ -50,9 +51,9 @@ a {
 
 p {
   font-family: "hurme-geo", sans-serif;
-  font-size: 25px;
+  font-size: 19px;
   margin-top: 0;
-  color: #3C4048;
+  color: #777777;
   text-align: justify; 
 }
 
