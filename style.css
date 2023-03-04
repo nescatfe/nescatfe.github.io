@@ -2,10 +2,6 @@
   font-family: "hurme-geo";
   src: url("fonts/HurmeGeometricSans2.otf");
 }
-@font-face {
-  font-family: "noto-serif-regular";
-  src: url("fonts/NotoSerif-Regular.ttf");
-}
 
 body {
   background: radial-gradient(circle at bottom center, #ffb1e165, transparent 60%),
@@ -23,7 +19,7 @@ body {
 }
 
 h1 {
-  font-family: "hurme-geo", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 50px;
   margin-top: 8rem;
   margin-bottom: 1rem;
@@ -32,6 +28,7 @@ h1 {
 }
 
 h2 {
+  font-family: Arial, sans-serif;
   font-size: 35px; 
   max-width: 600px; 
   text-align: left;
@@ -170,6 +167,7 @@ hr {
 .box-text p {
   text-align: left;
   font-family: "hurme-geo", monospace;
+  color: black;
   margin: 10px 5px 10px 5px;
   font-size: 16px;
   line-height: 1.4;
