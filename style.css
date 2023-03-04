@@ -8,7 +8,9 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, white, #ffdfe5);
+  background: radial-gradient(circle at bottom center, #ffb1e165, transparent 60%),
+              radial-gradient(circle at bottom left, #fff5f160, transparent 80%),
+              radial-gradient(circle at right, #ffb09660, transparent 40%), rgb(245 245 245);
   background-attachment: fixed;
   font-family: "hurme-geo", sans-serif;
 }
@@ -47,7 +49,8 @@ p {
 }
 
 hr {
-  width: 50%;
+  margin-top: 9rem;
+  width: 41.5%;
 }
 
 .date {
@@ -247,35 +250,41 @@ nav li a {
 .section-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  
+  margin-left: 25rem;  
 }
 
-.section-container a {
+.section {
+  display: flex;
+  margin-top: 0.8rem;
+  margin-left: 5.2rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.section-container a {  
   color: black;
-  text-align: left;
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 16px;  
-  padding: 28px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #bbb 0%, #bbb 33%, #000 33%, #000 66%, #bbb 66%, #bbb 100%) 1 100%;
 }
 
 /* Style for the sections */
-.section {
-  margin-top: 1rem;
-  margin-left: 5.2rem;
-  margin-right: 5.2rem;
-  margin-bottom: 3rem;
-  
-
-
 /* Style for the first section */
 .section-1 {  
+  display: flex;
+  flex-direction: column;
 }
 
-.section-2 {    
+.section-2 {   
+  display: flex;
+  flex-direction: column;
 }
 
 /* Style for the third section */
 .section-3 {
+  display: flex;
+  flex-direction: column;
 }
