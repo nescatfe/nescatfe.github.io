@@ -9,7 +9,8 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #cbfeff, #FFCEFE);
+  background: linear-gradient(to bottom right, white, #ffdfe5);
+  
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -113,13 +114,23 @@ p {
   margin: 0 auto 0;
 }
 
+h2 {
+  font-family: "hurme-geo", sans-serif;
+  font-size: 77px;
+  margin-bottom: 20;
+  color: #333;
+  text-align: left; 
+  margin-left: -180px; 
+}
+
 .box {
+  width: 630px;
   display: flex;
   align-items: center;
   margin-bottom: 45px;
   border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 8px;
+  padding: 12px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease;
   cursor: pointer;
@@ -138,8 +149,9 @@ p {
   width: 80px;
   height: 80px;
   object-fit: cover;
-  margin-right: 20px;
-  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
 }
@@ -159,16 +171,7 @@ p {
   font-family: "hurme-geo", monospace;
   margin: 10px 5px 10px 5px;
   font-size: 16px;
-  line-height: 1.5;
-}
-
-/* adjust margin for zigzag effect */
-.box:nth-child(odd) {
-  margin-left: -80px;
-}
-
-.box:nth-child(even) {
-  margin-right: -80px;
+  line-height: 1.4;
 }
 
 .box-link {
@@ -178,6 +181,15 @@ p {
 
 .box-link:hover {
   text-decoration: none;
+}
+
+/* adjust margin for zigzag effect */
+.box:nth-child(odd) {
+  margin-left: -200px;
+}
+
+.box:nth-child(even) {
+  margin-right: -200px;
 }
 
 </style>

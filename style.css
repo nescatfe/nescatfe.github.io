@@ -113,6 +113,14 @@ p {
   margin: 0 auto 0;
 }
 
+h2 {
+  font-size: 33px;
+/*font-family: "hurme-geo", sans-serif;*/
+  margin-bottom: 20;
+  text-align: left; 
+  margin-left: -150px; 
+}
+
 .box {
   width: 630px;
   display: flex;
