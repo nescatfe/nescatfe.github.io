@@ -34,7 +34,15 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin-left: 530px; 
+  margin-left: 490px; 
+}
+
+a {  
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;  
+  margin-bottom: 1rem;
 }
 
 p {
@@ -63,7 +71,8 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -1rem;
+  margin-top: -1.5rem;
+  margin-bottom: 4rem;
 }
 
 .status-text {
@@ -154,7 +163,7 @@ hr {
   flex-grow: 1;
   text-align: left;
   margin: 10px 5px 10px 5px;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: bold;  
 }
 
@@ -205,14 +214,12 @@ header:before {
 }
 
 .left {
-  font-size: 21px;
   float: left;
   margin-left: 90px;
   line-height: 60px;
 }
 
 .right {
-  font-size: 18px;
   float: right;
   margin-right: 90px;
   line-height: 60px;
