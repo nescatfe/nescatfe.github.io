@@ -24,8 +24,6 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h1 {
   font-size: 66px;
   margin-bottom: 0;
   color: #333;
-  text-align: justify; 
+  text-align: center; 
   margin-left: 50px; 
 }
 
@@ -105,19 +103,18 @@ p {
   }
 }
 
-
-
-.box-container {
-  max-width: 800px;
-  margin: 0 auto 0;
-}
-
 h2 {
   font-size: 33px;
 /*font-family: "hurme-geo", sans-serif;*/
-  margin-bottom: 20;
   text-align: left; 
-  margin-left: -100px; 
+  margin-left: -10px; 
+}
+
+/*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*//*BOX*/
+
+.box-container {
+  max-width: 800px;
+  margin-left: -200px;
 }
 
 .box {
@@ -153,14 +150,11 @@ h2 {
   transition: all 0.6s ease;
 }
 
-.box-text {
+.box-text h4 {
   flex-grow: 1;
   text-align: left;
-}
-
-.box-text h4 {
   margin: 10px 5px 10px 5px;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: bold;  
 }
 
@@ -184,8 +178,10 @@ h2 {
 }
 
 
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
 
 header {
+  font-family: Arial, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -209,15 +205,17 @@ header:before {
 }
 
 .left {
+  font-size: 21px;
   float: left;
-  margin-left: 20px;
-  line-height: 50px;
+  margin-left: 90px;
+  line-height: 60px;
 }
 
 .right {
+  font-size: 18px;
   float: right;
-  margin-right: 20px;
-  line-height: 50px;
+  margin-right: 90px;
+  line-height: 60px;
 }
 
 nav ul {
@@ -247,35 +245,41 @@ nav li a {
 }
 
 
+/*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*//*SECTION*/
+
 /* Style for the container element */
 .section-container {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
+  margin-left: 140px; 
   display: flex;
-  
-  flex: 1;
-  
   flex-direction: row;
-  height: 100vh;
+}
+
+.section-container a {
+  display: block;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 0.4;
+  margin-bottom: 10px;
 }
 
 /* Style for the sections */
 .section {
   flex: 1;
-  margin: 100px;
+  margin: 90px;
 }
 
 /* Style for the first section */
 .section-1 {
-  background-color: #d0d0d0;
 }
 
-/* Style for the second section */
-.section-2 {
-  background-color: #d0d0d0;
+.section-2 {  
 }
 
 /* Style for the third section */
 .section-3 {
-  background-color: #d0d0d0;
-}</style>
+  
+}
+</style>

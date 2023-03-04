@@ -10,21 +10,15 @@
 body {
   background: linear-gradient(to bottom right, white, #ffdfe5);
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
   font-family: "hurme-geo", sans-serif;
-  text-align: center;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-/*align-items: center;*/
-  height: 100vh;
 }
 
 h1 {
@@ -34,6 +28,11 @@ h1 {
   color: #333;
   text-align: center; 
   margin-left: 50px; 
+}
+
+h2 {
+  font-size: 35px;
+  margin-left: 530px; 
 }
 
 p {
@@ -47,6 +46,10 @@ p {
   margin-right: auto;
 }
 
+hr {
+  width: 50%;
+}
+
 .date {
   font-size: 1.2rem;
   color: #777;
@@ -57,7 +60,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 .status-text {
@@ -104,17 +107,11 @@ p {
   }
 }
 
+/*/BOX/*/
+
 .box-container {
   max-width: 800px;
-  margin: 0 auto 0;
-}
-
-h2 {
-  font-size: 33px;
-/*font-family: "hurme-geo", sans-serif;*/
-  margin-bottom: 20;
-  text-align: left; 
-  margin-left: -100px; 
+  margin-left: 590px;
 }
 
 .box {
@@ -150,12 +147,9 @@ h2 {
   transition: all 0.6s ease;
 }
 
-.box-text {
+.box-text h4 {
   flex-grow: 1;
   text-align: left;
-}
-
-.box-text h4 {
   margin: 10px 5px 10px 5px;
   font-size: 23px;
   font-weight: bold;  
@@ -179,6 +173,9 @@ h2 {
 .box-link:hover {
   text-decoration: none;
 }
+
+
+/*/HEADER/*/
 
 header {
   font-family: Arial, sans-serif;
@@ -244,38 +241,41 @@ nav li a {
   margin-right: -160px;
 }
 
+
+/*/SECTION/*/
 /* Style for the container element */
 .section-container {
-  margin-left: 140px; 
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  
 }
 
 .section-container a {
-  display: block;
   color: black;
   text-align: left;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 0.4;
-  margin-bottom: 10px;
+  font-size: 16px;  
+  padding: 28px;
 }
 
 /* Style for the sections */
 .section {
-  flex: 1;
-  margin: 90px;
-}
+  margin-top: 1rem;
+  margin-left: 5.2rem;
+  margin-right: 5.2rem;
+  margin-bottom: 3rem;
+  
+
 
 /* Style for the first section */
-.section-1 {
+.section-1 {  
 }
 
-.section-2 {  
+.section-2 {    
 }
 
 /* Style for the third section */
 .section-3 {
-  
 }
