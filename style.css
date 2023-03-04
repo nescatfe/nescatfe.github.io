@@ -253,6 +253,7 @@ nav li a {
 
 .section-container a {
   display: block;
+  color: black;
   text-align: left;
   text-decoration: none;
   font-family: Arial, sans-serif;
@@ -277,14 +278,4 @@ nav li a {
 /* Style for the third section */
 .section-3 {
   
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
 }
