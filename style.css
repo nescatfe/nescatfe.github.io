@@ -171,6 +171,8 @@ h2 {
   margin: 10px 5px 10px 5px;
   font-size: 16px;
   line-height: 1.4;
+  word-spacing: -2px;
+  
 }
 
 .box-link {
