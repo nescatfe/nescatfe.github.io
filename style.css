@@ -11,7 +11,6 @@ body {
   background: radial-gradient(circle at bottom center, #ffb1e165, transparent 60%),
               radial-gradient(circle at bottom left, #fff5f160, transparent 80%),
               radial-gradient(circle at right, #ffb09660, transparent 40%), rgb(245 245 245);
-  background-attachment: fixed;
   font-family: "hurme-geo", sans-serif;
 }
 
@@ -30,7 +29,6 @@ h1 {
   margin-bottom: 1rem;
   color: #333;
   text-align: left; 
-/*margin-left: 30px; */
 }
 
 h2 {
@@ -58,8 +56,8 @@ p {
 }
 
 hr {
-  margin-top: 9rem;
-  width: 800px;
+  margin-top: -4rem;
+  width: 780px;
 }
 
 .date {
@@ -126,19 +124,20 @@ hr {
   text-align: center;
   margin-left: auto; 
   margin-right: auto;
+  margin-bottom: 10rem;
 }  
 
 .box {
   width: 610px;
   display: flex;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 3.8rem;
   border: 1px solid #fff;
   border-radius: 8px;
   padding: 12px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease;
-  cursor: pointer;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .box:hover {
@@ -157,7 +156,6 @@ hr {
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 6px;
-/*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
   transition: all 0.6s ease;
 }
 
@@ -190,7 +188,6 @@ hr {
 
 
 /*/HEADER/*/
-
 header {
   font-family: Arial, sans-serif;
   position: fixed;
@@ -253,7 +250,6 @@ nav li a {
   margin-right: -160px;
 }
 
-
 /*/SECTION/*/
 /* Style for the container element */
 .section-container {
@@ -274,6 +270,25 @@ nav li a {
 }
 
 .section-container a {  
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;  
+  margin-bottom: 1rem;
+}
+
+.section-container p {  
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;  
+  margin-bottom: 1rem;
+}
+
+.section-container h5 {  
+  margin-top: -0.1rem;
   text-align: left;
   color: black;
   text-decoration: none;
