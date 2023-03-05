@@ -141,7 +141,9 @@ hr {
 }
 
 .box:hover img {
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+/*box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);*/
+  filter: drop-shadow(0 0 5px rgba(0,0,0,2));
+  transform: scale(1);
 }
 
 .box img {
