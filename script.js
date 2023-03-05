@@ -14,7 +14,7 @@ const dot = document.querySelector('.dot');
 //let dotClass = 'silver-dot';
 
 // Determine the status and dot class based on the hour in GMT+7
-if (hour >= 24 && hour < 4) {
+if (hour >= 0 && hour < 4) {
   statusText = 'Sleep\u00A0';
   dotClass = 'silver-dot';
 } else if (hour >= 4 && hour < 5) {
