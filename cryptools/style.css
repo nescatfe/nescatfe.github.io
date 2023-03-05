@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'HurmeFont';
-	src: url('HurmeGeometricSans2SemiBold.otf') format('opentype');
+	src: url('HurmeGeometricSans2SemiBold.woff2') format('opentype');
 }
 
 /* Reset default browser styles */
@@ -13,8 +13,8 @@
 
 /* Style for the boxes */
 			.box {
-				width: 45%;
-				height: 400px;
+				width: 670px;
+				height: 50%;
 				display: inline-block;
 				background-color: #dcdcdc;
 				border: 1px solid #ccc;
