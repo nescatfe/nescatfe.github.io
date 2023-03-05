@@ -1,13 +1,18 @@
 @font-face {
-  font-family: "hurme-geo";
-  src: url("fonts/HurmeGeometricSans2.otf");
+  font-family: "bold";
+  src: url("fonts/IBMPlexSans-Medium.woff2");
+}
+
+@font-face {
+  font-family: "light";
+  src: url("fonts/IBMPlexSans-Light.woff2");
 }
 
 body {
   background: radial-gradient(circle at bottom center, #ffb1e165, transparent 60%),
               radial-gradient(circle at bottom left, #fff5f160, transparent 80%),
               radial-gradient(circle at right, #ffb09660, transparent 40%), rgb(245 245 245);
-  font-family: "hurme-geo", sans-serif;
+  font-family: "light", sans-serif;
 }
 
 .container {
@@ -19,7 +24,7 @@ body {
 }
 
 h1 {
-  font-family: Arial, sans-serif;
+  font-family: "bold", sans-serif;
   font-size: 50px;
   margin-top: 8rem;
   margin-bottom: 1rem;
@@ -37,15 +42,16 @@ h2 {
 }  
 
 a {  
-  color: black;
+  color: purple;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: "bold", sans-serif;
   font-size: 18px;  
   margin-bottom: 1rem;
 }
 
 p {
-  font-family: "hurme-geo", sans-serif;
+  font-family: "bold", Sans-serif;
+  line-height: 1.3;
   font-size: 19px;
   margin-top: 0;
   color: #777777;
@@ -117,7 +123,7 @@ hr {
 
 /*/BOX/*/
 .box-container {
-  max-width: 400px; 
+  max-width: 450px; 
   text-align: center;
   margin-left: auto; 
   margin-right: auto;
@@ -125,13 +131,13 @@ hr {
 }  
 
 .box {
-  width: 610px;
+  width: 570px;
   display: flex;
   align-items: center;
   margin-bottom: 3.8rem;
   border: 1px solid #fff;
   border-radius: 8px;
-  padding: 12px;
+  padding: 13px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
@@ -166,13 +172,11 @@ hr {
 
 .box-text p {
   text-align: left;
-  font-family: "hurme-geo", monospace;
+  font-family: "light", monospace;
   color: black;
   margin: 10px 5px 10px 5px;
   font-size: 16px;
-  line-height: 1.4;
-  word-spacing: -2px;
-  
+  line-height: 1.5;  
 }
 
 .box-link {
