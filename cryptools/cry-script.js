@@ -1,4 +1,4 @@
-			// get references to the navbar links and the sections to scroll to
+// get references to the navbar links and the sections to scroll to
 			const tokenScannerLink = document.querySelector('a[href="#token_scanner"]');
 			const chartLink = document.querySelector('a[href="#chart"]');
 			const tokenScannerSection = document.getElementById('token_scanner');
@@ -21,3 +21,4 @@ function redirectTo(url) {
 		window.open(url + tokenAddress, "_blank");
 	}
 }
+
