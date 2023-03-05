@@ -34,9 +34,10 @@ h1 {
 
 h2 {
   font-family: Arial, sans-serif;
-  font-size: 35px; 
+  font-size: 40px; 
   max-width: 600px; 
   text-align: left;
+  margin-top: 7rem;
   margin-left: auto; 
   margin-right: auto;
 }  
@@ -45,7 +46,7 @@ a {
   color: purple;
   text-decoration: none;
   font-family: "bold", sans-serif;
-  font-size: 18px;  
+  font-size: 19px;  
   margin-bottom: 1rem;
 }
 
@@ -64,17 +65,14 @@ hr {
 }
 
 .status-container {
-/*display: flex;*/
-/*align-items: center;*/
-/*justify-content: center;*/
-/*margin-top: 1rem;*/
-/*margin-bottom: 3rem;*/
+  text-align: left;
 }
 
 .status-text {
   margin-top: 0.25rem;
   color: gray;
   display: inline-block;
+  margin-left: 0.3rem;
 }
 
 .dot {
@@ -83,7 +81,6 @@ hr {
   width: 0.6rem;
   border-radius: 50%;
   animation: pulse 1s ease-out infinite;
-  margin-right: 0.3rem;  
 }
 
 .red-dot {
