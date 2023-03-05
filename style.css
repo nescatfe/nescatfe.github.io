@@ -258,7 +258,7 @@ nav li a {
 .section {
   display: flex;
   margin-top: 1rem;
-  margin-left: 5.2rem;
+  margin-left: 3rem;
   margin-right: 5rem;
   margin-bottom: 3rem;
 }
@@ -291,7 +291,6 @@ nav li a {
   margin-bottom: 1rem;
 }
 
-/* Style for the sections */
 /* Style for the first section */
 .section-1 {  
   display: flex;
