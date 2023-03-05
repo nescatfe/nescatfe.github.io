@@ -3,64 +3,58 @@
 	src: url('HurmeGeometricSans2SemiBold.woff2') format('opentype');
 }
 
-/* Reset default browser styles */
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'HurmeFont', sans-serif;
-}
-
-/* Style for the boxes */
-			.box {
-				width: 670px;
-				height: 50%;
-				display: inline-block;
-				background-color: #dcdcdc;
-				border: 1px solid #ccc;
-				margin: 10px;
-				padding: 20px;
-			}
-
-/* Set default font size and line height */
 body {
-	font-family: 'HurmeFont', sans-serif;
-	font-size: 16px;
+	background-color: #F2EBE2;
 	line-height: 1.5;
 }
 
-/* Set background color */
-body {
-	background-color: #F2EBE2;
-}
-
-/* Center header text */
 header {
-	text-align: center;
+	font-family: 'HurmeFont', sans-serif;
 	margin-top: 2rem;
+	align-content: center;
 }
 
-/* Style header text */
+input {
+	font-family: 'HurmeFont', sans-serif;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
 h1 {
+	margin-top: -3rem;
+	margin-bottom: -0.5rem;
+	text-align: center;
 	font-size: 85px;
 	color: #333;
 }
-/* Center and style form */
-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 2rem;
+
+h2 {
+	margin-top: -0.7rem;
+	margin-bottom: 0.7rem;
 }
 
-/* Style form label */
+.box {
+/*	box-sizing: border-box;*/
+	margin: 2rem auto;
+	font-family: 'HurmeFont', sans-serif;
+	text-align: left;
+	margin-top: 2rem;
+	width: 670px;
+	height: 50%;
+	background-color: #dcdcdc;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
 label {
 	font-size: 1.2rem;
 	color: #333;
 	margin-bottom: 0.5rem;
 }
 
-/* Style form input */
 input[type="text"] {
 	padding: 0.5rem;
 	border-radius: 5px;
@@ -70,7 +64,6 @@ input[type="text"] {
 	max-width: 400px;
 }
 
-/* Style form buttons */
 button {
 	background-color: #333;
 	color: #fff;
@@ -82,7 +75,6 @@ button {
 	cursor: pointer;
 }
 
-/* Style form buttons */
 .button_bsc {
 	background-color: #daa520;
 	color: #f4f0ec;
@@ -105,30 +97,12 @@ button {
 	cursor: pointer;
 }
 
-/* Style form buttons on hover */
 .button_bsc:hover, .button_eth:hover {
 	background-color: #555;
 }
 
-
-
-/* Center and style footer */
-footer {
-	text-align: center;
-	margin-top: 1rem;
-	padding: 1rem;
-	background-color: #333;
-	color: #fff;
-}
-
-/* Style footer text */
-p {
-	font-family: sans-serif;
-	font-size: 12px;
-}
-
 nav {
-	background-color: #333;
+	background-color: gray;
 	height: 50px;
 	display: flex;
 	justify-content: center;
@@ -155,5 +129,13 @@ nav a {
 
 nav a:hover {
 	color: #00bfff;
+}
+
+footer {
+	color: gray;
+	text-align: center;
+	margin-top: 6rem;
+	padding: 1rem;
+	font-size: 12px;
 }
 
