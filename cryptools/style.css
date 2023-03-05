@@ -42,10 +42,10 @@ h2 {
 	font-family: 'HurmeFont', sans-serif;
 	text-align: left;
 	margin-top: 2rem;
-	width: 43%;
+	/*	width: 43%;*/
+	/*	height: 50%;*/
 	max-width: 650px;
 	min-width: 400px;
-	height: 50%;
 	background-color: #dcdcdc;
 	border: 1px solid #ccc;
 	padding: 20px;
