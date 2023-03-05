@@ -49,7 +49,7 @@ dot.classList.add(dotClass);
 
 // Set the time in the status container
 const timeText = now.toLocaleTimeString([], { timeZone: 'GMT', hour12: false, hour: '2-digit', minute: '2-digit' });
-document.getElementById('time').textContent = `\u00A0- ${timeText} GMT+7 `;
+document.getElementById('time').textContent = `\u00A0 ${timeText} GMT+7 `;
 
 //header menu blur
 window.addEventListener("scroll", function() {

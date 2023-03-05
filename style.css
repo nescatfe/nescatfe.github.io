@@ -63,32 +63,27 @@ hr {
   width: 780px;
 }
 
-.date {
-  font-size: 1.2rem;
-  color: #777;
-}
-
 .status-container {
-  color: #777;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+/*display: flex;*/
+/*align-items: center;*/
+/*justify-content: center;*/
+/*margin-top: 1rem;*/
+/*margin-bottom: 3rem;*/
 }
 
 .status-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  color: gray;
+  display: inline-block;
 }
 
 .dot {
+  display: inline-block;
   height: 0.6rem;
   width: 0.6rem;
   border-radius: 50%;
   animation: pulse 1s ease-out infinite;
-  margin: 7px;
+  margin-right: 0.3rem;  
 }
 
 .red-dot {
