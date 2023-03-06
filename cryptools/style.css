@@ -20,7 +20,7 @@ input {
 	display: block;
 	margin: 0 auto;
 	margin-top: 4rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 h1 {
@@ -37,7 +37,8 @@ h2 {
 }
 
 .box {
-/*	box-sizing: border-box;*/
+	box-sizing: border-box;
+	border: 3px solid black;
 	margin: 2rem auto;
 	font-family: 'HurmeFont', sans-serif;
 	text-align: left;
@@ -120,6 +121,12 @@ nav a {
 
 nav a:hover {
 	color: #00bfff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	color: blue;
 }
 
 footer {
