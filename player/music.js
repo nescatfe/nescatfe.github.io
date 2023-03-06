@@ -47,6 +47,9 @@ function changeVideo() {
         // Display the video title
         document.getElementById("videoTitle").innerHTML = data.items[0].snippet.title;
         
+        // Display the uploader name
+        document.getElementById("uploaderName").innerHTML = data.items[0].snippet.channelTitle;
+
         // Display the video type (live or recorded)
         if (data.items[0].snippet.liveBroadcastContent == "live") {
             document.getElementById("videoType").innerHTML = "Live";

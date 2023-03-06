@@ -134,6 +134,13 @@ h2 {
     text-align: center;
 }
 
+/*p {*/
+/*  margin: 0;*/
+/*  margin-bottom: -1rem;*/
+/*  font-size: 38px;*/
+/*  text-align: center;*/
+/*}*/
+
 .info label {
     margin-top: 2rem;
     font-size: 16px;
@@ -143,6 +150,7 @@ h2 {
 .info p {
     font-size: 16px;
     margin: left;
+    margin-bottom: -10px;
 }
 
 .info #videoType {
