@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player - mybae.id</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <!--Youtube-->
+    <div id="player" style="display: none; visibility: hidden;"></div>
+    <!--Player-->
+        <h2>Youtube Player</h2>
+        <div class="info">
+        <input type="text" id="youtubeLink" name="youtubeLink" required placeholder="🔎 Enter Youtube Link ..."><br>
+        <button type="button" onclick="changeVideo()">Play as Music</button>
+        <p id="videoTitle"></p>
+        <div>
+            <p>Type: <span id="videoType"></span></p>
+            <p>Duration: <span id="videoDuration"></span></p>
+        </div>
+    </div>
+    <div class="audio-player">
+        <div class="player-controls">
+            <div id="radioIcon"></div>
+            <button id="playAudio"></button>
+            <div id="seekObjContainer">
+                <div id="seekObj">
+                    <div id="percentage"></div>
+                </div>
+            </div>
+            <p><small id="currentTime">00:00</small></p>
+        </div>
+    </div>   <footer>
+        <p>Made with 🖤 by <a href="https://www.mybae.id">mybae.id</a></p>
+    </footer>
+    <script src="music.js"></script>
+</body>
+</html>

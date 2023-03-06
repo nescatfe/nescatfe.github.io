@@ -1,0 +1,173 @@
+body {
+    font-family: sans-serif, serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-size: 5px 5px;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, coral 49%, coral 51%, rgba(0, 0, 0, 0) 55%);
+    background-color: white;
+    padding-top: 60px;
+}
+
+.audio-player {
+    font-size: 13px;
+    font-weight: bold;
+    background: linear-gradient(to left bottom, #ffffff, #F6E1C3);
+    border-radius: 5px;
+    width: 400px;
+    padding: 2rem;
+    margin: auto;
+    background-color: white;
+    border: 2px solid black;
+}
+.audio-player .player-controls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.audio-player #radioIcon {
+    width: 40px;
+    height: 40px;
+    background: url("img/airpods-pro.png") no-repeat center;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+.audio-player #playAudio {
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: url("img/play.png") no-repeat center;
+    background-size: contain;
+}
+.audio-player #playAudio.pause {
+    background: url("img/pause.png") no-repeat center;
+    background-size: contain;
+}
+.audio-player p {
+    margin: 0 0 0 5px;
+    line-height: 1;
+    display: inline-flex;
+}
+.audio-player p small {
+    font-size: 10px;
+}
+.audio-player #seekObjContainer {
+    position: relative;
+    width: 300px;
+    margin: 0 5px;
+    height: 10px;
+}
+.audio-player #seekObjContainer #seekObj {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    border: 1px solid black;
+}
+.audio-player #seekObjContainer #seekObj #percentage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: coral;
+}
+
+.info {
+    font-family: sans-serif, serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: 470px;
+    margin: auto;
+    background: linear-gradient(to right bottom, #ffffff, #F7C8E0);
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info input[type="text"] {
+    font-size: 13px;
+    font-weight: bold;
+    margin: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.info button {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    background-color: pink;
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background-color: gray;
+}
+
+.info #videoTitle {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: -1rem;
+    font-size: 38px;
+    text-align: center;
+}
+
+.info label {
+    margin-top: 2rem;
+    font-size: 16px;
+    margin: left;
+}
+
+.info p {
+    font-size: 16px;
+    margin: left;
+}
+
+.info #videoType {
+    align-items: flex-start;
+    font-weight: bold;
+    color: red;
+}
+
+.info #videoDuration {
+    align-items: flex-start;
+    font-weight: bold;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: blue;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 2rem;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
