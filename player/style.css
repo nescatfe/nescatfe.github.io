@@ -154,6 +154,7 @@ h2 {
 }
 
 .info p {
+    color: white;
     font-size: 16px;
     margin: left;
     margin-bottom: -10px;
@@ -179,6 +180,7 @@ a {
 
 /* Footer styles */
 footer {
+    color: white;
     margin-top: 2rem;
     font-size: 12px;
     font-weight: lighter;
