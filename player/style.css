@@ -4,27 +4,20 @@ body {
     box-sizing: border-box;
     font-weight: bold;
     background-size: 5px 5px;
-/*  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, coral 49%, coral 51%, rgba(0, 0, 0, 0) 55%);*/
-    /*  background-repeat: no-repeat;*/
-    background-image: url("./img/bg.jpeg");
-    background-size: cover;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0) 46%, coral 49%, coral 51%, rgba(0, 0, 0, 0) 55%);
+/*  background-repeat: no-repeat;*/
+/*  background-image: url("./img/bg.jpeg");*/
+/*  background-size: cover;*/
     padding-top: 60px;
 }
 
-
-@media (max-width: 767px) {
-    body {
-        background-size: contain;
-        background-position: center;
-    }
-}
-
 .audio-player {
+    filter: blur(4px);
     font-size: 13px;
     font-weight: bold;
-/*  background: linear-gradient(to left bottom, #ffffff, #F6E1C3);*/
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to left bottom, #ffffff, #F6E1C3);
+/*  background: transparent;*/
+/*  backdrop-filter: blur(10px);*/
     border-radius: 5px;
     width: 400px;
     padding: 2rem;
@@ -88,15 +81,16 @@ body {
 }
 
 .info {
+    filter: blur(4px);
     font-family: sans-serif, serif;
     font-size: 13px;
     box-sizing: border-box;
     font-weight: bold;
     width: 470px;
     margin: auto;
-    background: transparent;
-    backdrop-filter: blur(10px);
-/*  background: linear-gradient(to left bottom, #ffffff, #F6E1C3);*/
+/*  background: transparent;*/
+/*  backdrop-filter: blur(10px);*/
+    background: linear-gradient(to left top, #ffffff, #F6E1C3);
     border: 2px solid black;
     border-radius: 5px;
     display: flex;
@@ -154,7 +148,7 @@ h2 {
 }
 
 .info p {
-    color: white;
+    color: black;
     font-size: 16px;
     margin: left;
     margin-bottom: -10px;
@@ -180,7 +174,7 @@ a {
 
 /* Footer styles */
 footer {
-    color: white;
+    color: black;
     margin-top: 2rem;
     font-size: 12px;
     font-weight: lighter;
