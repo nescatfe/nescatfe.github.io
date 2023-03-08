@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Avernod&#39;s Blog</title>
-    <link>https://mybae.id/blog/post/</link>
+    <link>https://mybae.id/b/post/</link>
     <description>Recent content in Posts on Avernod&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; mybae.id 2023</copyright>
-    <lastBuildDate>Wed, 08 Mar 2023 16:08:13 +0700</lastBuildDate><atom:link href="https://mybae.id/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Mar 2023 16:08:13 +0700</lastBuildDate><atom:link href="https://mybae.id/b/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vue.js</title>
-      <link>https://mybae.id/blog/post/vue.js/</link>
+      <link>https://mybae.id/b/post/vue.js/</link>
       <pubDate>Wed, 08 Mar 2023 16:08:13 +0700</pubDate>
       
-      <guid>https://mybae.id/blog/post/vue.js/</guid>
+      <guid>https://mybae.id/b/post/vue.js/</guid>
       <description>I just start learning Vue.js and it&amp;rsquo;s sucks af :(</description>
     </item>
     
     <item>
       <title>The Ordinary</title>
-      <link>https://mybae.id/blog/post/first-post/</link>
+      <link>https://mybae.id/b/post/first-post/</link>
       <pubDate>Wed, 08 Mar 2023 15:05:25 +0700</pubDate>
       
-      <guid>https://mybae.id/blog/post/first-post/</guid>
+      <guid>https://mybae.id/b/post/first-post/</guid>
       <description>I don&amp;rsquo;t know where to start writing at, but i&amp;rsquo;ll write as soon as i want to write.</description>
     </item>
     
