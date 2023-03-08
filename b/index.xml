@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Avernod&#39;s Blog</title>
-    <link>https://mybae.id/b/</link>
+    <link>https://mybae.id/</link>
     <description>Recent content on Avernod&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; mybae.id 2023</copyright>
-    <lastBuildDate>Wed, 08 Mar 2023 16:08:13 +0700</lastBuildDate><atom:link href="https://mybae.id/b/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Mar 2023 16:08:13 +0700</lastBuildDate><atom:link href="https://mybae.id/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vue.js</title>
-      <link>https://mybae.id/b/post/vue.js/</link>
+      <link>https://mybae.id/post/vue.js/</link>
       <pubDate>Wed, 08 Mar 2023 16:08:13 +0700</pubDate>
       
-      <guid>https://mybae.id/b/post/vue.js/</guid>
+      <guid>https://mybae.id/post/vue.js/</guid>
       <description>I just start learning Vue.js and it&amp;rsquo;s sucks af :(</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://mybae.id/b/about/</link>
+      <link>https://mybae.id/about/</link>
       <pubDate>Wed, 08 Mar 2023 15:08:13 +0700</pubDate>
       
-      <guid>https://mybae.id/b/about/</guid>
+      <guid>https://mybae.id/about/</guid>
       <description>Hello First Hi, my name is alvernod (aliases), i don&amp;rsquo;t know why i am build this website, i just wanna do something productive on the weekend and yeah this is the most random thing i&amp;rsquo;ve do i guess.
 Second I &amp;lsquo;know/do&amp;rsquo; code since junior high school (around 2010), my first program language was html, and yeah as you tought, i just learn a very basic html code like &amp;lt;h1&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;div&amp;gt; &amp;lt;a&amp;gt; etc.</description>
     </item>
     
     <item>
       <title>The Ordinary</title>
-      <link>https://mybae.id/b/post/first-post/</link>
+      <link>https://mybae.id/post/first-post/</link>
       <pubDate>Wed, 08 Mar 2023 15:05:25 +0700</pubDate>
       
-      <guid>https://mybae.id/b/post/first-post/</guid>
+      <guid>https://mybae.id/post/first-post/</guid>
       <description>I don&amp;rsquo;t know where to start writing at, but i&amp;rsquo;ll write as soon as i want to write.</description>
     </item>
     

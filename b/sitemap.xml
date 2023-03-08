@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mybae.id/b/</loc>
+    <loc>https://mybae.id/</loc>
     <lastmod>2023-03-08T16:08:13+07:00</lastmod>
   </url><url>
-    <loc>https://mybae.id/b/post/</loc>
+    <loc>https://mybae.id/post/</loc>
     <lastmod>2023-03-08T16:08:13+07:00</lastmod>
   </url><url>
-    <loc>https://mybae.id/b/post/vue.js/</loc>
+    <loc>https://mybae.id/post/vue.js/</loc>
     <lastmod>2023-03-08T16:08:13+07:00</lastmod>
   </url><url>
-    <loc>https://mybae.id/b/about/</loc>
+    <loc>https://mybae.id/about/</loc>
     <lastmod>2023-03-08T15:08:13+07:00</lastmod>
   </url><url>
-    <loc>https://mybae.id/b/post/first-post/</loc>
+    <loc>https://mybae.id/post/first-post/</loc>
     <lastmod>2023-03-08T15:05:25+07:00</lastmod>
   </url><url>
-    <loc>https://mybae.id/b/categories/</loc>
+    <loc>https://mybae.id/categories/</loc>
   </url><url>
-    <loc>https://mybae.id/b/tags/</loc>
+    <loc>https://mybae.id/tags/</loc>
   </url>
 </urlset>
