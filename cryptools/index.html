@@ -1,46 +1,81 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>CRYPTOOLS</title>
-		<meta name="description" content="CRYPTOOLS is a tool for performing security checks on cryptocurrency tokens. Check the security of your token by entering its address.">
-		<meta name="keywords" content="crypto security check, token crypto check, cryptocurrency, token, security, check">
-		<meta name="author" content="coolskyz">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header>
-			<h1>crypt<span style=" color: #1da2d8;">∞</span>ls</h1>
-			<nav>
-				<ul>
-					<li><a href="#token_scanner">Token Scanner</a></li>
-					<li><a href="#chart">Chart</a></li>
-				</ul>
-			</nav>
-		</header>
-		<body>
-		<input type="text" name="token_address" id="token_address" required placeholder="🔎 Enter token address...">	
-		<div class="box" id="token_scanner"> 
-			<h2>Token Scanner 🕵🏼🕵🏼</h2>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://moonarch.app/token/')" target="_blank">moonarch.app (BSC)</button>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://tokensniffer.com/token/bsc/')" target="_blank">tokensniffer.com (BSC)</button>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://gopluslabs.io/token-security/56/')" target="_blank">gopluslabs.io (BSC)</button>
-			<button type="button" class="button_eth" onclick="redirectTo('https://tokensniffer.com/token/eth/')" target="_blank">tokensniffer.com (ETH)</button>
-			<button type="button" class="button_eth" onclick="redirectTo('https://gopluslabs.io/token-security/1/')" target="_blank">gopluslabs.io (ETH)</button>
-		</div>
-		<div class="box" id="chart"> <!-- added id -->
-			<h2>Chart 📈📈</h2>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://poocoin.app/tokens/')" target="_blank">poocoin.app (BSC)</button>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://www.dextools.io/app/en/bnb/pair-explorer/')" target="_blank">dextools.io (BSC)</button>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://dexscreener.com/bsc/')" target="_blank">dexscreener.com (BSC)</button>
-			<button type="button" class="button_bsc" onclick="redirectTo('https://charts.bogged.finance/?c=bsc&t=')" target="_blank">bogged.finance (BSC)</button>
-			<button type="button" class="button_eth" onclick="redirectTo('https://www.dextools.io/app/en/eth/pair-explorer/')" target="_blank">dextools.io (ETH)</button>
-			<button type="button" class="button_eth" onclick="redirectTo('https://dexscreener.com/eth/')" target="_blank">dexscreener.com (ETH)</button>
-		</div>
-		<script src="cry-script.js"></script>
-		<footer>
-			<p>Made with 😄,😴 and 😰 by <a href="https://www.mybae.id">mybae.id</a></p>
-		</footer>
-	</body>
-		
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CRYPTOOLS</title>
+    <meta name="description" content="CRYPTOOLS is a tool for performing security checks on cryptocurrency tokens. Check the security of your token by entering its address.">
+    <meta name="keywords" content="crypto security check, token crypto check, cryptocurrency, token, security, check">
+    <meta name="author" content="coolskyz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+    <header>
+      <h1>crypt<span style=" color: #1da2d8;">∞</span>ls</h1>
+      <nav>
+        <ul>
+          <li><a href="#token_scanner">Token Scanner</a></li>
+          <li><a href="#token_chart">Chart</a></li>
+        </ul>
+      </nav>
+    </header>
+  <body>
+    <input type="text" name="token_address" id="token_address" required placeholder="🔎 Enter Smart Contract...">
+    <h3 id="token_scanner">Token Scanner 🕵🏼</h3>
+    <!-- Flex Container -->
+    <div id="container-scanner">
+      
+      <div class="button" id="button-bsc" onclick="redirectTo('https://moonarch.app/token/')">
+        <div id="circle"></div>
+        <a href="#">moonarch.app</a>
+      </div>
+      <div class="button" id="button-bsc" onclick="redirectTo('https://tokensniffer.com/token/bsc/')">
+        <div id="circle"></div>
+        <a href="#">tokensniffer.com</a>
+      </div>
+      <div class="button" id="button-bsc" onclick="redirectTo('https://gopluslabs.io/token-security/56/')">
+        <div id="circle"></div>
+        <a href="#">Gopluslabs.io</a>
+      </div>
+      <div class="button" id="button-eth" onclick="redirectTo('https://tokensniffer.com/token/eth/')">
+        <div id="circle"></div>
+        <a href="#">tokensniffer.com</a>
+      </div>
+      <div class="button" id="button-eth" onclick="redirectTo('https://gopluslabs.io/token-security/1/')">
+        <div id="circle"></div>
+        <a href="#">gopluslabs.io</a>
+      </div>
+    </div>
+    <span class="invisible-space"></span>
+  <h3 id="token_chart">Token Chart 📈 </h3>
+    <div id="container-chart">
+      <div class="button" id="button-bsc" onclick="redirectTo('https://poocoin.app/tokens/')">
+        <div id="circle"></div>
+        <a href="#">poocoin.app</a>
+      </div>
+      <div class="button" id="button-bsc" onclick="redirectTo('https://www.dextools.io/app/en/bnb/pair-explorer/')">
+        <div id="circle"></div>
+        <a href="#">dextools.io</a>
+      </div>
+      <div class="button" id="button-bsc" onclick="redirectTo('https://dexscreener.com/bsc/')">
+        <div id="circle"></div>
+        <a href="#">dexscreener.com</a>
+      </div>
+      <div class="button" id="button-bsc" onclick="redirectTo('https://charts.bogged.finance/?c=bsc&t=')">
+        <div id="circle"></div>
+        <a href="#">bogged.finance</a>
+      </div>
+      <div class="button" id="button-eth" onclick="redirectTo('https://www.dextools.io/app/en/eth/pair-explorer/')">
+        <div id="circle"></div>
+        <a href="#">dextools.io</a>
+      </div>
+      <div class="button" id="button-eth" onclick="redirectTo('https://dexscreener.com/eth/')">
+        <div id="circle"></div>
+        <a href="#">dexscreener.com</a>
+      </div>
+    </div>
+    <footer>
+      <p>Made with 😄,😴 and 😰 by <a href="https://www.mybae.id">mybae.id</a></p>
+    </footer>
+    <script src="cry-script.js"></script>
+  </body>
+</html>
