@@ -127,12 +127,13 @@ a {
 
 
 #button-bsc {
-  background-color: #daa520;
+  background-color: #EC9704;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   text-align: center;
-  background-image: url(https://bscscan.com/images/svg/brands/bnb-1.svg);
+/*background-image: url(https://bscscan.com/images/svg/brands/bnb-1.svg);*/
+  background-image: url(img/binance_thumb.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -170,12 +171,13 @@ a {
 
 /*-------ETH------*/
 #button-eth {
-  background-color: #4169e1;
+  background-color: #81BECE;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   text-align: center;
-  background-image: url(https://etherscan.io/images/svg/brands/ethereum-original.svg);
+/*background-image: url(https://etherscan.io/images/svg/brands/ethereum-original.svg);*/
+  background-image: url(img/eth_thumb.png);
   background-repeat: no-repeat;
   background-size: contain;
   
