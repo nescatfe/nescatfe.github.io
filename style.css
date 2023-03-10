@@ -143,8 +143,9 @@ hr {
 }
 
 .box:hover img {
-  filter: drop-shadow(0 0 5px rgba(0,0,0,2));
+  filter: drop-shadow(0 0 3px rgba(0,0,0,2));
   transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 .box img {
@@ -153,7 +154,7 @@ hr {
   object-fit: cover;
   padding: 1rem;
   border-radius: 6px;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
 }
 
 .box-text h4 {
@@ -201,8 +202,9 @@ hr {
 }
 
 .boxblur:hover img {
-  filter: drop-shadow(0 0 5px rgba(0,0,0,2));
+  filter: drop-shadow(0 0 3px rgba(0,0,0,2));
   transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
 .boxblur img {
@@ -211,7 +213,7 @@ hr {
   object-fit: cover;
   padding: 1rem;
   border-radius: 6px;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
 }
 
 .boxblur-text h4 {
