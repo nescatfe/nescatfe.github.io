@@ -117,5 +117,18 @@
         <a href="https://tea.mybae.id">Tea Time</a><br>
       </div>
     </div>
+    <script>
+      $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+        
+        $('html, body').animate(
+          {
+            scrollTop: $($(this).attr('href')).offset().top,
+          },
+          500,
+          'linear'
+        );
+      });
+    </script>
   </body>
 </html>

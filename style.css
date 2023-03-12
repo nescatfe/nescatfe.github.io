@@ -25,6 +25,10 @@ body {
   flex-direction: column;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "bold", sans-serif;
   font-size: 50px;
