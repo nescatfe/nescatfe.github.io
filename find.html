@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Music Search</title>
+  <script type="text/javascript">
+    function search() {
+      // Replace API_KEY with your API key
+      const apiKey = 'AIzaSyBJ-PXRhMKxYw3_dPX4j2tyqEyOyFF02SM';
+
+      // Get the search query and country code from the form
+      const searchQuery = document.getElementById('search-box').value;
+      const countryCode = document.getElementById('country-code').value;
+
+      // Make an HTTP request to the YouTube Data API
+      fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${searchQuery}&type=video&videoCategoryId=10&regionCode=${countryCode}&maxResults=10&key=${apiKey}`)
+        .then(response => response.json())
+        .then(data => {
+          // Extract the titles and links of the search results
+          const results = data.items.map(item => ({
+            title: item.snippet.title,
+            link: `https://www.youtube.com/watch?v=${item.id.videoId}`
+          }));
+
+          // Display the search results on the page
+          const resultList = document.getElementById('search-results');
+          resultList.innerHTML = '';
+          results.forEach(result => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = result.link;
+            link.textContent = result.title;
+            listItem.appendChild(link);
+            resultList.appendChild(listItem);
+          });
+        })
+        .catch(error => {
+          // Log any errors to the console
+          console.error(error);
+        });
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="event.preventDefault(); search();">
+    <label for="search-box">Search for:</label>
+    <input type="text" id="search-box" name="search-box" required>
+    <label for="country-code">Country code:</label>
+    <select id="country-code" name="country-code">
+      <option value="AR">Argentina</option>
+      <option value="AU">Australia</option>
+      <option value="BR">Brazil</option>
+      <option value="CA">Canada</option>
+      <option value="FR">France</option>
+      <option value="DE">Germany</option>
+      <option value="IN">India</option>
+      <option value="ID" selected>Indonesia</option>
+      <option value="JP">Japan</option>
+      <option value="MX">Mexico</option>
+      <option value="NL">Netherlands</option>
+      <option value="NZ">New Zealand</option>
+      <option value="RU">Russia</option>
+      <option value="KR">South Korea</option>
+      <option value="ES">Spain</option>
+      <option value="GB">United Kingdom</option>
+      <option value="US">United States</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <ul id="search-results"></ul>
+</body>
+</html>
