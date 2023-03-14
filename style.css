@@ -49,7 +49,7 @@ h2 {
 }  
 
 a {  
-  color: purple;
+  color: black;
   text-decoration: none;
   font-family: "bold", sans-serif;
   font-size: 19px;  
@@ -335,6 +335,10 @@ nav li a {
   font-family: Arial, sans-serif;
   font-size: 16px;  
   margin-bottom: 1rem;
+}
+
+.section-container a:hover {  
+  text-decoration: underline wavy blue; /* Set the underline style and color */
 }
 
 .section-container p {  
