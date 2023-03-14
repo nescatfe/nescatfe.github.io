@@ -39,7 +39,7 @@ function changeVideo() {
     player.loadVideoById(videoId);
     
     // Fetch video details using the YouTube Data API
-    var apiUrl = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key=API-KEY&part=snippet,contentDetails,liveStreamingDetails";
+    var apiUrl = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key=AIzaSyBJ-PXRhMKxYw3_dPX4j2tyqEyOyFF02SM&part=snippet,contentDetails,liveStreamingDetails";
     fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
